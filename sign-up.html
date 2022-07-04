@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maou Gallery</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/2c2364b521.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <h1> Sign Up</h1>
+        <form action="" id="sign-up-form" class="app-form">
+            <label for="user-name">User name
+                <input type="text" name="user-name" id="user-name">
+            </label>
+            <label for="email">
+                Email
+                <input type="email" name="email" id="email">
+            </label>
+            <div class="contain-input">
+                <label for="password">Password
+                    <input type="password" name="password" id="password">
+                </label>
+                <!-- <i class="fa-solid fa-circle-xmark login-icons"></i> -->
+                <i class="fa-solid fa-circle-check login-icons"></i>
+            </div>
+            
+            <div class="contain-input">
+                <label for="confirm-password">Confirm password
+                    <input type="password" name="confirm-password" id="confirm-password">
+                </label>
+                <i class="fa-solid fa-circle-xmark login-icons"></i>
+                <!-- <i class="fa-solid fa-circle-check login-icons"></i> -->
+            </div>
+            
+            <input type="button" value="Sign up">
+        </form>   
+
+        <p id="account">Have an account already? <a href="./sign-in.html">Sign in</a></p>
+    </main>
+    <script src="app.js"></script>
+    
+</body>
+</html>

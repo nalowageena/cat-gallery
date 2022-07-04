@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    --darkest-grey: rgb(25, 25, 25);
+    --darker-grey: rgb(50, 50, 50);
+    --darker-grey-2: rgb(75, 75, 75);
+    --dark-grey: rgb(100, 100, 100);
+    --light-grey: rgb(125, 125, 125);
+    --lighter-grey: rgb(150, 150, 150);
+    --lighter-grey-2: rgb(175, 175, 175);
+    --lightest-grey: rgb(200, 200, 200);
+}
+
+body{
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/* ...................................... */
+/* Styling the splash screen */
+.splash-screen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #000;
+    color: white;
+    min-height: 100vh;
+    min-width: 100vw;
+    text-align: center;
+    line-height: 90vh;
+
+    /* transition */
+    transition: all 2s;
+}
+/* adding the class display-none removes the splash screen */
+.splash-screen.display-none{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    background-color: transparent;
+    color: white;
+    min-height: 100vh;
+    min-width: 100vw;
+    text-align: center;
+    line-height: 90vh;
+}
+/* .................................... */
+
+
+/* The sign in page............ */
+main{
+    min-height: 70vh;
+    margin: auto;
+    padding: 25px;
+    /* background-color: var(--light-grey); */
+    border-radius: 25px;
+}
+
+h1{
+    text-align: center;
+}
+/* the form */
+.app-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.app-form div{
+    margin: 10px 0;
+}
+label{
+    padding: 12px;
+    font-size: larger;
+}
+
+input[type=text], input[type=password], input[type=email]{
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid var(--darkest-grey);
+    outline: none;
+    font-size: 20px;
+}
+
+input[type=button]{
+    padding: 10px;
+    min-width: 14em;
+    margin: auto;
+    border-radius: 20px;
+    border: 1px solid var(--lighter-grey);
+    background-color: var(--lightest-grey);   
+}
+
+#forgot-passwd{
+    padding: 10px;
+    margin: 0 0 20px 0;
+}
+#account{
+    padding: 10px;
+    margin: 40px 0;
+    
+}
+
+.contain-input{
+    display: flex;
+    position: relative;
+}
+/* fontawesome icons ......................... */
+.login-icons{
+    font-size: 1.2rem;
+    position: absolute;
+    left: 270px;
+    top: 45px;
+}
+.fa-circle-xmark{
+    color: red;
+}
+.fa-circle-check{
+    color: green;
+}
+/* ........................................... */
+
+
+
