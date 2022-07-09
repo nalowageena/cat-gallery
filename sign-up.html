@@ -16,35 +16,40 @@
     <main>
       <h1>Sign Up</h1>
       <form action="" id="sign-up-form" class="app-form">
-        <div>
-          <label for="user-name">User name </label>
+        <div class="contain-input">
+          <label for="user-name">Username </label>
           <input type="text" name="user-name" id="user-name" />
         </div>
-        <div>
+        <div class="contain-input">
           <label for="email"> Email </label>
           <input type="email" name="email" id="email" />
         </div>
-        <div>
-          <label for="password">Password </label>
-          <input type="password" name="password" id="password" />
-        </div>
-        <!-- <i class="fa-solid fa-circle-xmark login-icons"></i> -->
-        <!-- <i class="fa-solid fa-circle-check login-icons"></i> -->
 
-        <div>
-          <label for="confirm-password">Confirm password </label>
-          <input
-            type="password"
-            name="confirm-password"
-            id="confirm-password"
-          />
+        <div class="contain-input">
+          <label for="password">Password </label>
+          <div class="add-icons">
+            <input type="password" name="password" id="password" />
+            <i class="fa-solid fa-circle-xmark login-icons"></i>
+            <!-- <i class="fa-solid fa-circle-check login-icons"></i> -->
+          </div>
         </div>
-        <!-- <i class="fa-solid fa-circle-xmark login-icons"></i> -->
-        <!-- <i class="fa-solid fa-circle-check login-icons"></i> -->
+
+        <div class="contain-input">
+          <label for="confirm-password">Confirm password </label>
+          <div class="add-icons">
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+            />
+            <i class="fa-solid fa-circle-xmark login-icons"></i>
+            <!-- <i class="fa-solid fa-circle-check login-icons"></i> -->
+          </div>
+        </div>
         <button type="submit" class="btn">Sign up</button>
       </form>
 
-      <p id="account">
+      <p class="account">
         Have an account already? <a href="./sign-in.html">Sign in</a>
       </p>
     </main>
