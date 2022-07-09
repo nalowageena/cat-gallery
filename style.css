@@ -20,6 +20,9 @@ body{
     flex-direction: column;
     align-items: center;
 
+    color: #fff;
+    background-color: rgb(32, 23, 23);
+
 }
 /* ...................................... */
 /* Styling the splash screen */
@@ -58,6 +61,7 @@ body{
 /* The sign in page............ */
 main{
     min-height: 70vh;
+    max-width: 90vw;
     margin: auto;
     padding: 25px;
     /* background-color: var(--light-grey); */
@@ -71,28 +75,30 @@ h1{
 .app-form{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    
 }
 .app-form div{
     margin: 10px 0;
 }
 label{
-    padding: 12px;
-    font-size: larger;
+    padding: 12px 12px 12px 0;
 }
 
 input[type=text], input[type=password], input[type=email]{
+    background-color: transparent;
+    color: white;
     padding: 8px;
     border: none;
-    border-bottom: 2px solid var(--darkest-grey);
+    border-bottom: 2px solid white;
     outline: none;
-    font-size: 20px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 100%;
 }
 
-input[type=button]{
+.btn{
     padding: 10px;
-    min-width: 14em;
-    margin: auto;
+    margin-top: 20px;
     border-radius: 20px;
     border: 1px solid var(--lighter-grey);
     background-color: var(--lightest-grey);   
@@ -108,17 +114,17 @@ input[type=button]{
     
 }
 
-.contain-input{
+/* .contain-input{
     display: flex;
     position: relative;
-}
+} */
 /* fontawesome icons ......................... */
-.login-icons{
+/* .login-icons{
     font-size: 1.2rem;
     position: absolute;
     left: 270px;
     top: 45px;
-}
+} */
 .fa-circle-xmark{
     color: red;
 }
