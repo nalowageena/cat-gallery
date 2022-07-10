@@ -74,7 +74,11 @@ main{
 
 h1{
     text-align: center;
-    margin-bottom: 30px;
+    background-color: teal;
+    border-radius: 50%;
+    height: 8rem;
+    aspect-ratio: 1;
+    line-height: 10rem;
 }
 /* the form */
 .app-form{
@@ -86,7 +90,7 @@ h1{
     margin: 10px 0;
 }
 label{
-    padding: 12px 12px 12px 0;
+    color: aqua;
 }
 
 input[type=text], input[type=password], input[type=email]{
@@ -108,7 +112,7 @@ input[type=text], input[type=password], input[type=email]{
     border: 1px solid transparent;
     background-color: #464D77;
     font-weight: 600;   
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 0.8em;
     text-transform: uppercase;
     max-width: 60%;
@@ -140,18 +144,26 @@ input[type=text], input[type=password], input[type=email]{
     position: relative;
 }
 
+.inform{
+    display: none;
+    font-size: 10px;
+    color: rgb(177, 14, 14);
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
 .login-icons{
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     position: absolute;
-    left: 270px;
-  
+    left: 280px;
+    top: 10px;
+   
 } 
-.fa-circle-xmark{
-    color: red;
+.fa-info{
+    font-size: 1rem;
+    padding-right: 5px;
+    color: rgb(177, 14, 14);
 }
-.fa-circle-check{
-    color: green;
-}
+
 /* ........................................... */
 
 
