@@ -11,6 +11,11 @@
     --lighter-grey: rgb(150, 150, 150);
     --lighter-grey-2: rgb(175, 175, 175);
     --lightest-grey: rgb(200, 200, 200);
+
+    --color-1: #4a4e69;
+    --color-2: #22223b;
+    --color-3: #9a8c98;
+    --color-4: #c9ada7;
 }
 
 body{
@@ -20,8 +25,8 @@ body{
     flex-direction: column;
     align-items: center;
 
-    color: #fff;
-    background-color: rgb(33, 131, 128);
+    color: var(--color-1);
+    background-color: #fff;
 
 }
 /* ...................................... */
@@ -64,17 +69,20 @@ main{
     max-width: 90vw;
     margin: auto;
     padding: 25px;
-    /* background-color: var(--light-grey); */
-    border-radius: 5px;
 
-    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 2px;
+
+    border: 8px solid var(--color-2);
+
+    /* background-color: #f7ede2; */
    
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
 }
 
 h1{
-    text-align: center;
-    background-color: teal;
+    text-align: right;
+    background-color: var(--color-3);
+    color: var(--color-2);
     border-radius: 50%;
     height: 8rem;
     aspect-ratio: 1;
@@ -90,15 +98,15 @@ h1{
     margin: 10px 0;
 }
 label{
-    color: aqua;
+    color: var(--color-1);
 }
 
 input[type=text], input[type=password], input[type=email]{
     background-color: transparent;
-    color: white;
+    color: #000;
     padding: 8px;
     border: none;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--color-1);
     outline: none;
     font-size: 16px;
     width: 100%;
@@ -120,12 +128,22 @@ input[type=text], input[type=password], input[type=email]{
     margin: 25px auto auto auto;
 }
 
-.btn:hover{
+.btn:active, .btn:hover{
     background-color: #8a477c;
 }
 
-#forgot-passwd{
+#forgot-passwd, .account, .account a{
     padding: 10px;
+    font-size: small;
+    text-decoration: none;
+}
+
+#forgot-passwd, .account a{
+    color: var(--color-4);
+    font-weight: 900;
+}
+
+#forgot-passwd{
     margin: 0 0 20px 0;
 }
 .account{
