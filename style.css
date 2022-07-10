@@ -30,40 +30,9 @@ body{
 
 }
 /* ...................................... */
-/* Styling the splash screen */
-.splash-screen{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    background-color: #000;
-    color: white;
-    min-height: 100vh;
-    min-width: 100vw;
-    text-align: center;
-    line-height: 90vh;
-
-    /* transition */
-    transition: all 2s;
-}
-/* adding the class display-none removes the splash screen */
-.splash-screen.display-none{
-    position: fixed;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    z-index: -10;
-    background-color: transparent;
-    color: white;
-    min-height: 100vh;
-    min-width: 100vw;
-    text-align: center;
-    line-height: 90vh;
-}
-/* .................................... */
 
 
-/* The sign in page............ */
+/* The sign in  and sign up pages............ */
 main{
     min-height: 70vh;
     max-width: 90vw;
@@ -74,9 +43,6 @@ main{
 
     border: 8px solid var(--color-2);
 
-    /* background-color: #f7ede2; */
-   
-    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
 }
 
 h1{
@@ -88,11 +54,11 @@ h1{
     aspect-ratio: 1;
     line-height: 10rem;
 }
-/* the form */
+
+/* the forms ................................ */
 .app-form{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
 .app-form div{
     margin: 10px 0;
@@ -152,21 +118,9 @@ input[type=text], input[type=password], input[type=email]{
     text-align: center;
 }
 
-.contain-input input:focus + label
-{
-    color: aqua;
-}
-
 .add-icons{
     display: flex;
     position: relative;
-}
-
-.inform{
-    display: none;
-    font-size: 10px;
-    color: rgb(177, 14, 14);
-    font-family: 'Trebuchet MS', sans-serif;
 }
 
 .login-icons{
@@ -176,6 +130,23 @@ input[type=text], input[type=password], input[type=email]{
     top: 10px;
    
 } 
+
+/* ........................................... */
+
+
+
+
+
+
+
+.inform{
+    display: none;
+    font-size: 10px;
+    color: rgb(177, 14, 14);
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+
 .fa-info{
     font-size: 1rem;
     padding-right: 5px;
