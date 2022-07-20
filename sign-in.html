@@ -19,7 +19,8 @@
       <form action="" id="sign-in-form" class="app-form">
         <div class="contain-input">
           <label for="user-name">Username </label>
-          <input type="text" name="user-name" id="user-name" />
+          <input type="text" name="user-name" id="username" />
+          <p class="error">Username field should not be left empty</p>
         </div>
         <div class="contain-input">
             <label for="password">Password </label>
@@ -27,6 +28,8 @@
               <input type="password" name="password" id="password" />
               <i class="fa-solid fa-eye-slash login-icons"></i>
             </div>
+            <p class="error">Email field should not be left empty</p>
+        </div>
           </div>
         <a href="#" id="forgot-passwd">Forgotten your password?</a>
         <button type="submit" class="btn">Sign in</button>
@@ -36,6 +39,6 @@
         Do not have an account?<a href="./sign-up.html">Create an account</a>
       </p>
     </main>
-    <script src="app.js"></script>
+    <script src="validation.js"></script>
   </body>
 </html>
