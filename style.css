@@ -136,14 +136,14 @@ input[type=text], input[type=password], input[type=email]{
 /* ........................................... */
 
 
-.warn{
+.error{
     display: none;
     font-size: 12px;
     color: rgb(177, 14, 14);
     font-family: 'Trebuchet MS', sans-serif;
 }
 
-.warn.show{
+.error.show{
     display: block;
 }
 

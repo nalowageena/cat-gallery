@@ -29,7 +29,7 @@ console.log(password_regex.test(my_password));
 
 // first select dom elements
 
-const warn = document.querySelector(".warn");
+const error = document.querySelector(".error");
 const username = document.getElementById('username');
 const password = document.getElementById('password')
 const btn = document.querySelector(".btn");
@@ -39,9 +39,13 @@ document.addEventListener("click", checkValidation);
 btn.disabled = true;
 function checkValidation() {
     if (username.innerHTML === '') {
-        warn.classList.toggle('show');
+        error.classList.toggle('show');
     }
     else{
-        btn.disabled = false;
+        if (!username_regex.test(username.innerHTML)) {
+            error.innerHTML = 'Username is not valid'
+            error.classList.toggle('show');
+        }
+        else{btn.disabled = false;}    
     }
 }
